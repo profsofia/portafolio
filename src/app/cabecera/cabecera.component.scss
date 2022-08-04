@@ -1,0 +1,32 @@
+.wrapper{
+  /*contenedor*/
+  display: flex; //para que las secciones se queden horizontales
+  justify-content: space-between; //para que se ubiquen uno a la izq y el otro a la der
+  padding: 0 1rem;
+  align-items: center;
+  align-content: center;
+  height: 3.5rem;
+  background-color: var(--color-4);
+  box-shadow: 0 0 20px var(--color-2);
+
+}
+.section-2{
+  .list-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    .item-menu{
+      padding: 0 1rem;
+    }
+    .item-number, .link{
+    color: var(--color-6);
+    padding: 0 .5rem;
+    cursor: pointer;
+    transition: all ease 200ms;
+    &:hover {
+      opacity: .6;
+    }
+    }
+  }
+}

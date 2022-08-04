@@ -1,8 +1,13 @@
 /* paleta de colores */
 :root {
-  --color-1: #00253e;
-  --color-2:#00111c;
-  --color-3:#00406c;
-  --color-4:#350455;
-  -color-5:#3f004d;
+  --color-1: #023047;
+  --color-2:#219ebc;
+  --color-3:#ffb703;
+  --color-4:#fb8500;
+  -color-5:#8ecae6;
+  --color-6: #33415c;
+}
+html, body{
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--color-1);
 }
