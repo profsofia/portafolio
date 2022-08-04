@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acerca-de-mi.component.scss']
 })
 export class AcercaDeMiComponent implements OnInit {
-
+  list = ['Angular Typewriter Effect', 'Hello World...']
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,11 +13,14 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
     AppComponent,
     CabeceraComponent,
     AcercaDeMiComponent,
-    ProyectosComponent
+    ProyectosComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularTypewriterEffectModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
