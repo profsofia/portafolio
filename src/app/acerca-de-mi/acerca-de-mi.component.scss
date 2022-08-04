@@ -18,3 +18,25 @@ font-size: large;
   font-size: 1.2rem;
   color: rgb(203, 211, 218);
 }
+.links{
+
+  .block{
+    display: block;
+    .block-in{
+      font-size: 2rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      cursor: pointer;
+    }
+  }
+}
+img{
+  margin-left: 4rem;
+  margin-right: 4rem;
+  max-width: 250px;
+  max-height: 250px;
+}

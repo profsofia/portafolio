@@ -1,7 +1,21 @@
 <div class="wrapper">
   <div class="pre-title animate__animated animate__lightSpeedInLeft">Hola! Mi nombre es</div>
-  <h1 class="title"><ngtypewriter [StringList]='list' [speed]='1000'></ngtypewriter></h1>
+  <h1 class="title"><ngtypewriter [StringList]='list' [speed]='2000'></ngtypewriter></h1>
 
   <h2 class="sub-title">Soy desarrolladora Full Stack</h2>
   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis voluptate nam dolor dignissimos voluptatem velit temporibus modi quod aspernatur.</p>
+  <!--colocar spiner!!!-->
+  <img src="https://res.cloudinary.com/sofiaschenone/image/upload/ar_1:1,b_rgb:023047,bo_5px_solid_rgb:ffb703,c_fill,g_auto,r_max,w_1000/v1659631612/portfolio/Dise%C3%B1o_sin_t%C3%ADtulo_5_yx0r5i-removebg-preview_omgku0.png" alt="imagen portafolio sofia schenone full stack" class="img-fluid animate__animated animate__backInLeft">
+  <div class="link-wrapper">
+    <hr>
+    <div class="links d-flex flex-wrap">
+      <div class="block col-12 col-lg-4" *ngFor="let link of links">
+        <div class="block-in">
+          <a href="{{link.href}}" target="_blank">
+            <i class="{{link.icon}}"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
