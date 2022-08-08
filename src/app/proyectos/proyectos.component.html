@@ -1,1 +1,23 @@
-<p>proyectos works!</p>
+<!--<h1 class="text-primary py-5 my-5" *ngFor="let repo of repos |async">{{repo.full_name}} nombre</h1>-->
+
+ <!-- <h1 class="fw-bolder text-center">Mis proyectos</h1>
+<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 mt-2">
+  <div class="col" *ngFor="let repo of repos | async; let i =index">
+    <div class="card animate__animated animate__fadeInUp animation-{{i*2}}">
+      <img src="{{repo.gravatar_id}}" *ngIf="repo.gravatar_id" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{repo.name}}</h5>
+        <a href="{{repo.html_url}}"><i class="uil uil-github"></i> Clonar</a>
+        <br>
+        <span>{{repo.language}}</span>
+        <p class="card-text">{{repo.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<cdk-virtual-scroll-viewport itemSize="5">
+  <div class="container" *cdkVirtualFor="let i of item">
+    {{i}}
+  </div>
+</cdk-virtual-scroll-viewport>
